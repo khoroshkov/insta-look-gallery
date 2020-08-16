@@ -1,0 +1,72 @@
+@import "../../index.css";
+
+form {
+  margin: 30px auto 10px;
+  text-align: center;
+}
+
+label input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+/* label {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  margin: 10px auto;
+  line-height: 3rem;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 2.4rem;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+label:hover {
+  background: var(--primary);
+  color: white;
+} */
+
+.output {
+  height: 6rem;
+  font-size: 0.8rem;
+}
+
+.error {
+  color: var(--error);
+}
+
+.parent {
+  background: rgb(233, 233, 233);
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.parent[data-isOpen="true"] {
+  width: 5rem;
+  height: 5rem;
+}
+
+.child {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #fff;
+  background: var(--primary);
+  border-radius: 50%;
+  line-height: 1.5rem;
+  
+}
+
+.child:before {
+  content: "+";
+}
